@@ -1,0 +1,74 @@
+
+	*{
+		margin: 0;
+	}
+	body{
+		background-color: cadetblue;
+		background-image: url("imagen/fondo-madera.jpg");
+	}
+	h2{
+		font-size: 2rem;
+		font-family: 'luckiest Guy', cursive;
+		text-shadow: 2px 2px 6px black;
+		color: white;
+		margin: 1px 0 0 0;
+		width: 100%;
+		text-align: center;
+		padding-left: 62%;
+	}
+	h2 span{
+		color: black;
+		text-shadow: 2px 2px 6px white;
+	}
+	
+	div{
+		display: inline-block;
+		float: left;
+	}
+	div.tablero{
+		width: 600px;
+		height: 585px;
+		margin-left: 30%;
+		border: 4px solid black;
+		box-shadow:  0px 0px 10px 3px black;
+		padding: 0;
+	}
+	div.tablero .filaTablero .colorTa{
+		width: 75px;
+		height: 65px;
+	}
+	/*padre impar - los hijos impar*/
+	div.tablero .filaTablero:nth-child(odd) .colorTa:nth-child(odd){
+		background-color: white;
+	}
+	/*padre impar - los hijos par*/
+	div.tablero .filaTablero:nth-child(odd) .colorTa:nth-child(even){
+		background-color: black;
+	}
+	/*padre par - los hijos impar*/
+	div.tablero .filaTablero:nth-child(even) .colorTa:nth-child(odd){
+		background-color: black;
+	}
+	/*padre par - los hijos par*/
+	div.tablero .filaTablero:nth-child(even) .colorTa:nth-child(even){
+		background-color: white;
+	}
+	.fRojo{
+		position: absolute;
+		background-color: #ED3A11;	
+		padding: 18px;
+		border-radius: 50px;
+		border: 5px solid #7C0002;
+		box-shadow: 3px 3px 7px 1px #363535;
+		margin: 14px;
+	}
+	.fAzul{
+		position: absolute;
+		background-color: #0005FF;	
+		padding: 18px;
+		border-radius: 50px;
+		border: 5px solid #08255F;
+		box-shadow: 3px 3px 7px 1px #363535;
+		margin: 14px;
+	}
+	

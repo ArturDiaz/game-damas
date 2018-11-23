@@ -2,198 +2,113 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Documento sin título</title>
+<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Luckiest+Guy" rel="stylesheet">
+<title>Juego de Damas</title>
 <link rel="stylesheet" href="js/jquery-ui.css">
-<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/estilo.css">
 <script src="js/jquery.js"></script>
 <script src="js/jquery-ui.js"></script>
-<style>
-	
-	body{
-		background-image: url("imagen/fondo-madera.jpg");		
-	}
-	.container{
-		height: 580px;
-		width: 100%;
-		padding: 0 24% 0 24%;
-
-	}
-	#tablaBorde{
-		border: 3px solid black;
-		width: 100%;
-		height: 100%;
-		padding: 0;
-	}
-	.tablero{
-		display: flex;
-		width: 100%;
-		height: 11.11%;
-		padding: 0;
-	}
-
-	.blanco{
-		background-color: #FFE3AF;
-		padding:2% 6.25% 2% 6.25%;
-	}
-	.negro{
-		background-color: #0F0F0F;
-		padding:0% 6.25% 2% 6.25%;
-	}
-	.fRojo{
-		position: absolute;
-		background-color: #ED3A11;	
-		padding: 2%;
-		border-radius: 50px;
-		border: 2px solid #7C0002;
-	}
-	.fAzul{
-		position: absolute;
-		background-color: #0005FF;	
-		padding: 2%;
-		border-radius: 50px;
-		border: 2px solid #000758;
-	}
-	
-
-</style>
+<script type="text/javascript" src="js/app.js"></script>
 </head>
 
 <body>
+	
 	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 col-md-12 col-sm-12">
-				<center><h2>JUEGO DE DAMAS CLÁSICO</h2></center>
+		<div><h2>  <span>Juego</span> De <span>Damas</span> Clasico</h2></div>
+		<div class="tablero">
+			<div class="filaTablero">
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
 			</div>
-		</div>
-		<div id="tablaBorde">
-			<div class=" col-lg-8 col-md-8 tablero">
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
+			<div class="filaTablero">
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero">
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
+			<div class="filaTablero">
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fRojo"></div></div>
+				<div class="colorTa"></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
+			<div class="filaTablero">
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
+			<div class="filaTablero">
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
+			<div class="filaTablero">
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
+			<div class="filaTablero">
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
+			<div class="filaTablero">
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
 			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-			</div>
-			<div class="col-lg-8 col-md-8 tablero" >
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-				<div class="negro"></div>
-				<div class="blanco"></div>
-			</div>
-		</div>
-		<div id="fichas-colores">
-			<div id="fichaRojo">
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-				<div class="fRojo"></div>
-			</div>
-			<div id="fichaAzul">
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
-				<div class="fAzul"></div>
+			<div class="filaTablero">
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
+				<div class="colorTa blanc"><div class="fAzul"></div></div>
+				<div class="colorTa"></div>
 			</div>
 		</div>
 	</div>
 </body>
-<script>
 
-	$(document).ready(function(){
-		$(".fRojo").draggable();
-		$(".fAzul").draggable();
-	});
-</script>
 </html>
